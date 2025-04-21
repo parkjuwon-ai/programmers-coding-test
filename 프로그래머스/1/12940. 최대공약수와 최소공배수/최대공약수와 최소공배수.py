@@ -9,6 +9,6 @@ def solution(n, m):
             a= x[-1]
 
     #최소 공배수 구하는 법
-    #n과 m의 약수를 구하고 전부 곱한다   
+    #n과 m를 곱하고 최대 공약수로 나눈다
     answer = [a, (n * m) // a]
     return answer
