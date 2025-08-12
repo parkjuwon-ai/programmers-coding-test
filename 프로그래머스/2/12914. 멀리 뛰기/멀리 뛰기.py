@@ -1,11 +1,14 @@
 def solution(n):
-    MOD = 1234567
-    if n == 1:
+    a= 1
+    b= 2
+    if n==1:
         return 1
-    if n == 2:
+    elif n==2:
         return 2
-
-    a, b = 1, 2  # f(1), f(2)
-    for _ in range(3, n + 1):
-        a, b = b, (a + b) % MOD
+    else:
+        for i in range(3, n+1):
+            a,b= b,(a+b) % 1234567
     return b
+            
+    
+  
